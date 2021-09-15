@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Link from "next/link";
 import { RoughNotation } from "react-rough-notation";
 import tailwindColors from "tailwindcss/colors";
+import Head from "next/head";
 
 import { colors } from "../constants/colors";
 
@@ -17,6 +18,9 @@ type Props = {
 const Home: NextPage<Props> = ({ links }) => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <Head>
+        <title>Furtos - Caker Experience @ CKL</title>
+      </Head>
       <div className="bg-white p-8 rounded shadow-xl">
         <div className="flex flex-col">
           <section className="text-blueGray-700 ">
@@ -54,9 +58,10 @@ const Home: NextPage<Props> = ({ links }) => {
                 <p className="mb-4 text-base font-medium leading-relaxed text-blueGray-700 ">
                   Só para ficar mais claro, isso significa que você é importante
                   para mim, e há características suas que admiro e até gostaria
-                  de adaptá-las para minha vida. Esse é o conceito de "roubar",
-                  em que nos inspiramos no melhor dos outros para melhorar a nós
-                  mesmos, e sempre adaptando ao nosso próprio jeito.
+                  de adaptá-las para minha vida. Esse é o conceito de
+                  &quot;roubar&quot;, em que nos inspiramos no melhor dos outros
+                  para melhorar a nós mesmos, e sempre adaptando ao nosso
+                  próprio jeito.
                 </p>
                 <p className="mb-16 text-base font-medium leading-relaxed text-blueGray-700 ">
                   Ficou curioso? Clique no seu nome abaixo para descobrir qual o{" "}

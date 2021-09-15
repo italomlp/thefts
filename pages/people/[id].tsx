@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps, InferGetStaticPropsType, NextPage } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { ArrowLeftIcon } from "@heroicons/react/solid";
 import { RoughNotation } from "react-rough-notation";
@@ -41,6 +41,9 @@ const People: NextPage<Props> = ({ person }) => {
 
   return (
     <div>
+      <Head>
+        <title>{person.name} - Furtos - Caker Experience @ CKL</title>
+      </Head>
       <div className="container mx-auto items-center px-5 pb-32 pt-8">
         <div className="mb-24 w-full mx-auto md:w-1/2">
           <button
