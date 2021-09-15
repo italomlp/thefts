@@ -26,17 +26,17 @@ const Home: NextPage<Props> = ({ links }) => {
           <section className="text-blueGray-700 ">
             <div className="container flex flex-col items-center px-5 py-8 mx-auto">
               <div className="flex flex-col w-full mx-auto mb-12 text-left lg:w-2/3 lg:text-center">
-                <h1 className="mb-6 text-2xl font-semibold tracking-tighter text-white sm:text-5xl title-font">
+                <div className="mb-6">
                   <RoughNotation
                     type="highlight"
                     show
-                    strokeWidth={8}
-                    padding={-10}
                     color={tailwindColors.pink[900]}
                   >
-                    Você é um artista!
+                    <h1 className="py-2 px-4 text-2xl font-semibold tracking-tighter text-white sm:text-5xl title-font">
+                      Você é um artista!
+                    </h1>
                   </RoughNotation>
-                </h1>
+                </div>
                 <p className="mx-auto text-base font-medium leading-relaxed text-blueGray-700 lg:w-2/3">
                   Se você está aqui, é porque é especial, e te considero um
                   artista. E eu quero roubar algo de você!
