@@ -11,7 +11,7 @@ const people = [
     name: 'Diego',
     avatar: '/diego.jpeg',
     subtitle: 'Um cara diversificado.🧞‍♂️',
-    content: 'Tivemos pouco contato man, mas sei que está sempre disposto a ajudar e/ou zoar com a galera e/ou trocar uma ideia. Isso é bem valioso, faz parte da cultura Emmental e CKL, e qualquer pessoa (incluindo eu) pode se inspirar em ti facilmente.',
+    content: 'Tivemos pouco contato man, mas sei que está sempre disposto a ajudar e/ou zoar com a galera e/ou trocar uma ideia. Isso é muito valioso, faz parte da cultura Emmental e CKL, e qualquer pessoa (incluindo eu) pode se inspirar em ti facilmente.',
   },
   {
     id: 'gabs',
