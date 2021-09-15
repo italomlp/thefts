@@ -77,11 +77,11 @@ const people = [
     content: 'Manja demais de muita coisa, tem propriedade no que fala, curte simulação, e ainda é o rei de "el bigodon". Você é a personificação do que almeijo ser (tirando o bigode, o meu não cresce mais haha).',
   },
   {
-    id: 'outro',
-    name: 'Outro',
-    avatar: '/outro.jpg',
-    subtitle: 'Ainda vamos nos conhecer melhor.🤴',
-    content: 'Seu nome não estava aqui na lista pois ainda estamos nos conhecendo. Logo logo, com certeza, estaremos trocando muitas ideias e conhecimento juntos.',
+    id: 'wip',
+    name: 'WIP',
+    avatar: '/wip.jpg',
+    subtitle: 'Ainda vamos nos conhecer melhor.🤝',
+    content: 'Work In Progress: Seu nome não está aqui na lista pois ainda estamos nos conhecendo. Logo logo, com certeza, estaremos trocando muitas ideias e conhecimento juntos.',
   },
 ];
 

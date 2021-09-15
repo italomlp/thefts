@@ -7,7 +7,7 @@ import { ArrowLeftIcon } from "@heroicons/react/solid";
 import { RoughNotation } from "react-rough-notation";
 
 import people from "../../data/people";
-import { colorsRGB } from "../../constants/colors";
+import { useCurrentColor } from "../../hooks/useCurrentColor";
 
 export async function getStaticPaths() {
   const paths = people.map(({ id }) => ({
@@ -38,6 +38,7 @@ type Props = InferGetStaticPropsType<typeof getStaticProps>;
 
 const People: NextPage<Props> = ({ person }) => {
   const router = useRouter();
+  const { currentColor } = useCurrentColor();
 
   return (
     <div>
@@ -75,9 +76,7 @@ const People: NextPage<Props> = ({ person }) => {
                 type="underline"
                 strokeWidth={7}
                 show
-                color={
-                  colorsRGB[Math.trunc(Math.random() * 100) % colorsRGB.length]
-                }
+                color={currentColor}
               >
                 <span>{person.name}</span>
               </RoughNotation>

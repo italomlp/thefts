@@ -4,9 +4,10 @@ import { RoughNotation } from "react-rough-notation";
 import tailwindColors from "tailwindcss/colors";
 import Head from "next/head";
 
-import { colors } from "../constants/colors";
+import { colors, colorsRGB } from "../constants/colors";
 
 import people from "../data/people";
+import { useCurrentColor } from "../hooks/useCurrentColor";
 
 type Props = {
   links: Array<{
@@ -16,6 +17,8 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ links }) => {
+  const { setCurrentColor } = useCurrentColor();
+
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <Head>
@@ -71,21 +74,26 @@ const Home: NextPage<Props> = ({ links }) => {
 
                 <section className="text-blueGray-700">
                   <div className="grid grid-cols-1 justify-items-center sm:grid-cols-2 md:grid-cols-3 gap-3 items-center">
-                    {links.map(({ id, name }, index) => (
-                      <div key={id}>
-                        <Link href={`/people/${id}`}>
-                          <a
-                            className={`py-3 px-6 text-white rounded-lg shadow-lg block md:inline-block w-32 text-center transition duration-300 ease-in-out hover:bg-white hover:text-${
-                              colors[index % colors.length]
-                            } bg-${colors[index % colors.length]} border-${
-                              colors[index % colors.length]
-                            } border-2 transform hover:-translate-y-1 hover:scale-110 active:border-white`}
-                          >
-                            {name}
-                          </a>
-                        </Link>
-                      </div>
-                    ))}
+                    {links.map(({ id, name }, index) => {
+                      const color = colors[index % colors.length];
+                      const colorRGB = colorsRGB[index % colors.length];
+                      return (
+                        <div
+                          key={id}
+                          onClick={() => {
+                            setCurrentColor(colorRGB);
+                          }}
+                        >
+                          <Link href={`/people/${id}`}>
+                            <a
+                              className={`py-3 px-6 text-white font-bold rounded-lg shadow-lg block md:inline-block w-32 text-center transition duration-300 ease-in-out hover:bg-white hover:text-${color} bg-${color} border-${color} border-2 transform hover:-translate-y-1 hover:scale-110 active:border-white`}
+                            >
+                              {name}
+                            </a>
+                          </Link>
+                        </div>
+                      );
+                    })}
                   </div>
                 </section>
               </div>
