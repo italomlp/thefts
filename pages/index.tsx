@@ -7,6 +7,7 @@ import Head from "next/head";
 import { colors } from "../constants/colors";
 
 import people from "../data/people";
+import { useEffect, useState } from "react";
 
 type Props = {
   links: Array<{
@@ -16,6 +17,14 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ links }) => {
+  const [showTitleRoughNotation, setShowTitleRoughNotation] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowTitleRoughNotation(true);
+    }, 1000);
+  }, []);
+
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <Head>
@@ -29,7 +38,7 @@ const Home: NextPage<Props> = ({ links }) => {
                 <div className="mb-6">
                   <RoughNotation
                     type="highlight"
-                    show
+                    show={showTitleRoughNotation}
                     color={tailwindColors.pink[900]}
                   >
                     <h1 className="py-2 px-4 text-2xl font-semibold tracking-tighter text-white sm:text-5xl title-font">
