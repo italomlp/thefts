@@ -7,7 +7,6 @@ import Head from "next/head";
 import { colors } from "../constants/colors";
 
 import people from "../data/people";
-import { useEffect, useState } from "react";
 
 type Props = {
   links: Array<{
@@ -17,14 +16,6 @@ type Props = {
 };
 
 const Home: NextPage<Props> = ({ links }) => {
-  const [showTitleRoughNotation, setShowTitleRoughNotation] = useState(false);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShowTitleRoughNotation(true);
-    }, 1000);
-  }, []);
-
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <Head>
@@ -38,7 +29,7 @@ const Home: NextPage<Props> = ({ links }) => {
                 <div className="mb-6">
                   <RoughNotation
                     type="highlight"
-                    show={showTitleRoughNotation}
+                    show
                     color={tailwindColors.pink[900]}
                   >
                     <h1 className="py-2 px-4 text-2xl font-semibold tracking-tighter text-white sm:text-5xl title-font">
@@ -84,11 +75,9 @@ const Home: NextPage<Props> = ({ links }) => {
                       <div key={id}>
                         <Link href={`/people/${id}`}>
                           <a
-                            className={`py-3 px-6 text-white rounded-lg bg-${
+                            className={`py-3 px-6 text-white rounded-lg shadow-lg block md:inline-block w-32 text-center transition duration-300 ease-in-out hover:bg-white hover:text-${
                               colors[index % colors.length]
-                            } shadow-lg block md:inline-block w-32 text-center transition duration-300 ease-in-out hover:bg-white hover:text-${
-                              colors[index % colors.length]
-                            } border-${
+                            } bg-${colors[index % colors.length]} border-${
                               colors[index % colors.length]
                             } border-2 transform hover:-translate-y-1 hover:scale-110 active:border-white`}
                           >
