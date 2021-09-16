@@ -65,7 +65,7 @@ const Home: NextPage<Props> = ({ links }) => {
                   &quot;roubar&quot; (como um artista), em que nos inspiramos no
                   melhor dos outros para melhorar a nós mesmos, e sempre
                   adaptando ao nosso próprio jeito. Aah, e vale dizer também que
-                  a ideia é não cometer plágio também, por isso a importância da
+                  a ideia é não cometer plágio, por isso a importância da
                   adaptação individual.
                 </p>
                 <p className="mb-2 text-base font-medium leading-relaxed text-blueGray-700 ">
