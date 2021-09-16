@@ -62,14 +62,20 @@ const Home: NextPage<Props> = ({ links }) => {
                   Só para ficar mais claro, isso significa que você é importante
                   para mim, e há características suas que admiro e até gostaria
                   de adaptá-las para minha vida. Esse é o conceito de
-                  &quot;roubar&quot;, em que nos inspiramos no melhor dos outros
-                  para melhorar a nós mesmos, e sempre adaptando ao nosso
-                  próprio jeito.
+                  &quot;roubar&quot; (como um artista), em que nos inspiramos no
+                  melhor dos outros para melhorar a nós mesmos, e sempre
+                  adaptando ao nosso próprio jeito. Aah, e vale dizer também que
+                  a ideia é não cometer plágio também, por isso a importância da
+                  adaptação individual.
                 </p>
-                <p className="mb-16 text-base font-medium leading-relaxed text-blueGray-700 ">
+                <p className="mb-2 text-base font-medium leading-relaxed text-blueGray-700 ">
                   Ficou curioso? Clique no seu nome abaixo para descobrir qual o{" "}
                   <span className="font-bold">furto</span> que
                   estou/estive/estarei cometendo, e você nem saberia:
+                </p>
+                <p className="mb-16 text-base font-medium leading-relaxed text-blueGray-700 ">
+                  (PS: Se seu nome não está na lista, clique em{" "}
+                  <span className="font-bold">WIP</span>).
                 </p>
 
                 <section className="text-blueGray-700">
