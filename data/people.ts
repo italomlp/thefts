@@ -25,14 +25,14 @@ const people = [
     name: 'Gui',
     avatar: '/gui.jpeg',
     subtitle: 'Tá aí um cara fora da curva.💁‍♂️',
-    content: 'Já aprendi demais contigo, e só de trocar umas ideias todo dia com você, aprendemos ainda mais. Isso é algo que almeijo, ser uma referência assim como você.',
+    content: 'Já aprendi demais contigo, e só de trocarmos ideias todo dia, aprendemos ainda mais. Isso é algo que almeijo, ser uma referência assim como você.',
   },
   {
     id: 'gus',
     name: 'Gus',
     avatar: '/gus.jpeg',
     subtitle: 'Manda foto de agora?.😏',
-    content: 'Teu inglês é praticamente impecável man. Só de trocar uma ideia contigo todo dia ali, seja até apenas como ouvinte nas dailies, já aprendo muito. Se eu chegar em 10% do teu speaking, já estarei fluente.',
+    content: 'Teu inglês é praticamente impecável man. Só de trocar uma ideia contigo todo dia ali, seja apenas como ouvinte nas dailies, já aprendo muito. Se eu chegar em 10% do teu speaking, já estarei fluente.',
   },
   {
     id: 'lucas',
@@ -46,7 +46,7 @@ const people = [
     name: 'Fifo',
     avatar: '/fifo.png',
     subtitle: 'Oi Fifo!.🙋‍♂️',
-    content: 'Sempre alto astral, brincalhão, conhece de tudo um pouco. Todo dia aprendo um pouco mais contigo. Você é um bom parceiro de equipe e um ótimo líder, características que nem sempre andam juntas. Quero sempre estar por perto para continuar aprendendo de tudo um pouco, e me inspirar pelo teu know-how em liderança.',
+    content: 'Sempre alto astral, brincalhão, conhece de tudo um pouco. Todo dia aprendo ainda mais contigo. Você é um bom parceiro de equipe e um ótimo líder, características que nem sempre andam juntas. Quero sempre estar por perto para continuar aprendendo, e me inspirar pelo teu know-how em liderança.',
   },
   {
     id: 'leandro',
@@ -67,7 +67,7 @@ const people = [
     name: 'Thiago',
     avatar: '/thiago.jpeg',
     subtitle: 'Um dos caras que me acolheu.🥋',
-    content: 'Você praticamente foi o primeiro cara com quem trabalhei aqui na CKL, e sempre curti teu estilo zoeiro man. Além disso, sempre tive vontade de aprender alguma arte marcial, e krav magá parece bem legal. Quem sabe um dia a gente não troque uma ideia sobre?',
+    content: 'Você praticamente foi o primeiro cara com quem trabalhei aqui na CKL, e sempre curti teu estilo zoeiro man. Além disso, sempre tive vontade de aprender alguma arte marcial ou autodefesa, e krav magá parece bem legal. Quem sabe um dia a gente não troque uma ideia sobre?',
   },
   {
     id: 'torugo',
